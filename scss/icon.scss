@@ -6,6 +6,9 @@
   @include font-smoothing(antialiased);
 }
 
+.icon-home:before {
+  content: "\e900";
+}
 .icon-menu:before {
   content: "\e5d2";
 }
