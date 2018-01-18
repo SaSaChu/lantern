@@ -345,6 +345,7 @@ header {
 
     &.page_cent {
       padding: 0;
+      margin-bottom: 100px;
 
       &:before, &:after {
         display: none;
@@ -525,7 +526,7 @@ header {
       .type_boxs {
         display: inline-block;
         width: 100%;
-        margin: 20px 0 50px 0;
+        margin: 20px 0 0 0;
         padding: 30px 20px;
         border-top: 2px solid rgba(145, 96, 157, 1.00); 
         border-bottom: 2px solid rgba(145, 96, 157, 1.00);
@@ -550,6 +551,83 @@ header {
             font-weight: 600;
           }
         }
+      }
+
+      .news_boxs {
+        display: inline-block;
+        width: 100%;
+        max-width:1000px;
+        
+        .news_box {
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid rgba(145, 96, 157, 1.00); 
+          padding: 15px 0;
+          @include clearfix();
+          
+
+          .n_date {
+            display: inline-block;
+            background-color: rgba(85, 24, 123, 1.00);
+            font-size: 18px;
+            @include border-radius(30px);
+            padding: 15px 20px;
+            color: white;
+            float: left;
+
+            @include range-width(0, 450px) {
+              font-size: 16px;
+              padding: 10px 15px;
+            }
+          }
+
+          .n_titel {
+            display: inline-block;
+            cursor: pointer;
+            float: left;
+            font-size: 18px;
+            color: rgba(85, 24, 123, 1.00);
+            font-weight: 600;
+            padding: 0;
+            margin: 0 0 0 30px;
+            line-height: 50px;
+
+            &:hover, &:active {
+              text-decoration: underline;
+            }
+
+            @include range-width(0, 450px) {
+              width: 100%;
+              text-align: left;
+              margin: 0;
+              line-height: 25px;
+              padding-top: 10px;
+            }
+          }
+
+          .n_content {
+            display: none;
+
+            &.show_co {
+              display: inline-block;
+            }
+            
+            width: 100%;
+            padding: 15px 0;
+            border-top: 1px solid rgba(145, 96, 157, 1.00);
+            margin-top: 15px;
+            text-align: left;
+
+            p {
+              display: inline-block;
+              padding: 0 10px;
+              margin: 0;
+              color: rgba(23, 23, 23, 1.00);
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+        }     
       }
     }
   }

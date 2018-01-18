@@ -11,4 +11,9 @@ $(function () {
     }
   );
 
+  $('.n_titel').click (function () {
+     $('.n_content').toggleClass ('show_co');
+    }
+  );
+
 });
