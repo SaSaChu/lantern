@@ -506,6 +506,62 @@ header {
           }
         }
 
+        .little02 {
+          display: inline-block;
+          cursor: pointer;
+          width: calc(100% / 4 - 10px * 5 / 3);
+          text-decoration: none;
+          background-color: rgba(145, 96, 157, 1.00);
+          @include border-radius(30px);
+          padding: 15px 0;
+          font-size: 24px;
+          color: white;
+          float: left;
+          @include transition(all .3s);
+
+          @include range-width(755px, 1090px) {
+            font-size: 18px;
+            padding: 10px 0;
+          }
+
+          @include range-width(690px, 755px) {
+            font-size: 16px;
+            padding: 10px 0;
+          }
+
+          @include range-width(330px, 690px) {
+            font-size: 16px;
+            padding: 10px 0;
+            margin: 0 10px 10px 10px !important;
+            width: calc(50% - 10px * 2);
+          }
+
+          @include range-width(0, 330px) {
+            font-size: 15px;
+            padding: 10px 0;
+            margin: 0 5px 10px 5px !important;
+            width: calc(50% - 5px * 2);
+          }
+
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+
+          &:nth-child(2), &:nth-child(3) {
+            margin: 0 10px;
+          }
+
+          &:nth-child(4) {
+            margin-left: 10px;
+          }
+
+          &:hover, &:active, &.l_ok {
+            background-color: rgba(84, 24, 122, 1.00);
+          }
+
+
+        }
+
         p {
           display: inline-block;
           padding: 0 10px;
@@ -627,7 +683,182 @@ header {
               line-height: 30px;
             }
           }
+
+          .plan_boxs {
+            display: inline-block;
+            float: left;
+
+            &:after {
+              display: inline-block;
+              content: "│";
+              padding: 0 10px;
+              font-size: 24px;
+              color: rgba(145, 96, 157, 1.00);
+
+              @include range-width(450px, 1090px) {
+                font-size: 18px;
+              }
+
+              @include range-width(0, 450px) {
+                font-size: 15px;
+              }
+            }
+
+            a {
+              display: inline-block;
+              cursor: pointer;
+              font-size: 24px;
+              color: rgba(145, 96, 157, 1.00);
+              text-decoration: none;
+              margin-bottom: 10px;
+              @include transition(all .3s);
+
+              @include range-width(450px, 1090px) {
+                font-size: 18px;
+              }
+
+              @include range-width(0, 450px) {
+                font-size: 15px;
+              }
+
+              &:hover, &:active, &.plan_ok {
+                color: rgba(83, 30, 120, 1.00);
+                font-weight: 600;
+              }
+            }
+          }
         }     
+      }
+
+      .lantern_boxs {
+        display: inline-block;
+        width: 100%;
+        max-width: 1000px;
+
+        .lantern_title {
+          display: inline-block;
+          width: 100%;
+          font-size: 30px;
+          font-weight: 600;
+          color: rgba(192, 19, 17, 1.00);
+          text-align: left;
+          margin: 20px 0;
+
+          @include range-width(755px, 1090px) {
+            font-size: 24px;
+          }
+
+          @include range-width(0, 755px) {
+            font-size: 18px;
+          }
+          
+          &:before {
+            display: inline-block;
+            content: '\e901';
+            font-family: 'icomoon';
+            font-size: 30px;
+            color: rgba(207, 82, 79, 1.00);
+            padding-top: 5px;
+            padding-right: 10px;
+
+            @include range-width(755px, 1090px) {
+              font-size: 24px;
+            }
+
+            @include range-width(0, 755px) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 1000px;
+        }
+
+        .program_boxs {
+          display: inline-block;
+          width: 100%;
+
+          .program_box {
+            display: inline-block;
+            width: 100%;
+            @include clearfix();
+            margin-bottom: 20px;
+
+            .program_date {
+              display: inline-block;
+              width: 185px;
+              background-color: rgba(244, 187, 163, 1.00);
+              @include border-radius(30px);
+              padding: 10px 0;
+              margin-right: 30px;
+
+              font-size: 20px;
+              color: rgba(170, 39, 42, 1.00);
+              font-weight: 600;
+
+              float: left;
+
+              @include range-width(450px, 680px) {
+                width: 100%;
+              }
+
+              @include range-width(0, 450px) {
+                width: 100%;
+                font-size: 16px
+              }
+            }
+
+            .program_list {
+              display: inline-block;
+              width: calc(100% - 185px - 30px);
+              border-bottom: 1px dotted rgba(138, 138, 138, 1.00);
+              float: left;
+              text-align: left;
+              padding-bottom: 10px;
+
+              @include range-width(0, 680px) {
+                width: 100%;
+                padding-top: 10px;
+              }
+
+              span {
+                display: inline-block;
+                width: 100%;
+
+                @include range-width(0, 450px) {
+                  padding: 0 10px;
+                }
+
+                p {
+                  display: inline-block;
+                  padding: 5px 0;
+                  margin: 0;
+                  font-size: 20px;
+                  color: rgba(42, 42, 42, 1.00);
+
+                  @include range-width(0, 450px) {
+                    width: 100%;
+                    font-size: 16px
+                  }
+
+                  &:first-child {
+                    &:after {
+                      display: inline-block;
+                      content: '│';
+                      padding: 0 10px;
+
+                      @include range-width(0, 450px) {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
