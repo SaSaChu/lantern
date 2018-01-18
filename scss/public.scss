@@ -769,6 +769,27 @@ header {
               font-size: 18px;
             }
           }
+
+          &.sec_title {
+            margin: 20px 0 10px 0;
+          }
+        }
+
+        .sec_p {
+          display: inline-block;
+          width: 100%;
+          font-size: 30px;
+          color: rgba(192, 19, 17, 1.00);
+          text-align: left;
+          padding-left: 30px;
+
+          @include range-width(755px, 1090px) {
+            font-size: 24px;
+          }
+
+          @include range-width(0, 755px) {
+            font-size: 18px;
+          }
         }
 
         img {
@@ -779,6 +800,47 @@ header {
         .program_boxs {
           display: inline-block;
           width: 100%;
+
+          &.pppic {
+            padding-left: 30px;
+
+            @include range-width(0, 755px) {
+              padding-left: 0;
+            }
+          }
+
+          span {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            color: rgba(23, 23, 23, 1.00);
+            text-align: left;
+            padding: 20px 0;
+            line-height: 30px;
+
+            @include range-width(0, 755px) {
+              font-size: 16px;
+              line-height: 25px;
+            }
+          }
+
+          .ps {
+            display: inline-block;
+            width: 100%;
+            font-size: 24px;
+            color: rgba(190, 23, 28, 1.00);
+            text-align: left;
+            padding-bottom: 10px;
+
+            @include range-width(0, 755px) {
+              font-size: 16px;
+            }
+          }
+
+          img {
+            width: 100%;
+            max-width: 970px;
+          }
 
           .program_box {
             display: inline-block;
@@ -823,7 +885,7 @@ header {
                 padding-top: 10px;
               }
 
-              span {
+              .pl_boxs {
                 display: inline-block;
                 width: 100%;
 
