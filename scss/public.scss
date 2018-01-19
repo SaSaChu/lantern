@@ -1161,6 +1161,78 @@ header {
             }
           }
         }
+
+        .room_type {
+          display: inline-block;
+          width: 100%;
+          font-size: 20px;
+          color: rgba(42, 42, 42, 1.00);
+          padding: 5px 0;
+          text-align: left;
+
+          @include range-width(0, 540px) {
+            width: 100%;
+            font-size: 16px
+          }
+        }
+
+        .table_boxs {
+          display: inline-block;
+          width: 100%;
+          margin-top: 10px;
+          @include clearfix();
+          text-align: left;
+
+          @include range-width(0, 650px) {
+            margin-top: 20px;
+          }
+
+          .room_name, .room_add, .room_phone {
+            display: inline-block;
+            float: left;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            height: 45px;
+
+            @include range-width(0, 800px) {
+              font-size: 16px;
+              padding: 10px;
+            }
+          }
+
+
+          .room_name {
+            width: 30%;
+            color: white;
+            background-color: rgba(144, 97, 155, 1.00);
+
+            @include range-width(0, 650px) {
+              width: 100%;
+            }
+          }
+
+          .room_add {
+            width: 50%;
+            color: rgba(42, 42, 42, .8);
+            background-color: rgba(255, 255, 255, .5);
+
+            @include range-width(0, 650px) {
+              width: 100%;
+              background-color: rgba(255, 255, 255, .7);
+            }
+          }
+
+          .room_phone {
+            width: 20%;
+            color: white;
+            background-color: rgba(144, 97, 155, .5);
+
+            @include range-width(0, 650px) {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
