@@ -57,6 +57,33 @@
     {
       "icon": {
         "paths": [
+          "M752 250l186 262-186 262c-16 22-42 36-70 36h-468c-46 0-86-38-86-84v-428c0-46 40-84 86-84h468c28 0 54 14 70 36z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "label"
+        ],
+        "defaultCode": 59538,
+        "grid": 24
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "label",
+        "id": 422,
+        "order": 79,
+        "prevSize": 24,
+        "code": 59538,
+        "name": "label"
+      },
+      "setIdx": 2,
+      "setId": 33,
+      "iconIdx": 422
+    },
+    {
+      "icon": {
+        "paths": [
           "M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
         ],
         "attrs": [],
