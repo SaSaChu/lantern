@@ -1029,6 +1029,84 @@ header {
                     }
                   }
                 }
+
+                .view_boxs {
+                  display: inline-block;
+                  width: 100%;
+                  padding: 20px 0;
+
+                  .view_box {
+                    display: inline-block;
+                    width: 100%;
+                    @include clearfix();
+
+                    padding-bottom: 20px;
+
+                    .view_pic {
+                      display: inline-block;
+                      width: 100%;
+                      max-width: 200px;
+                      float: left;
+
+                      @include range-width(0, 625px) {
+                        width: 100%;
+                        max-width: 100%;
+                      }
+                      
+                      img {
+                        width: 100%;
+                        max-width: 200px;
+
+                        @include range-width(0, 625px) {
+                          width: 100%;
+                          max-width: 100%;
+                        }
+                      }
+                    }
+
+                    .view_type {
+                      display: inline-block;
+                      width: 100%;
+                      max-width: calc(100% - 200px);
+                      float: left;
+                      padding-left: 10px;
+
+                      @include range-width(0, 625px) {
+                        width: 100%;
+                        max-width: 100%;
+                        padding-left: 0;
+                      }
+
+
+                      .v01 {
+                        display: inline-block;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: rgba(168, 41, 46, 1.00);
+                        float: left;
+
+                        @include range-width(0, 540px) {
+                          width: 100%;
+                          font-size: 18px;
+                          margin-top: 15px
+                        }                   
+                      }
+
+                      .v02 {
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 20px;
+                        color: rgba(42, 42, 42, 1.00);
+                        padding: 5px 0;
+
+                        @include range-width(0, 540px) {
+                          width: 100%;
+                          font-size: 16px
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
 
