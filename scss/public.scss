@@ -456,7 +456,7 @@ header {
             color: rgba(184, 141, 96, 1.00);
             font-size: 16px;
             font-weight: 600;
-            padding: 0 10px;
+            padding: 3px 10px;
           }
 
           &:first-child {
@@ -830,6 +830,12 @@ header {
           text-align: left;
           padding-left: 30px;
 
+          &.tr_p {
+            color: rgba(231, 93, 32, 1.00);
+            font-weight: 600;
+            padding-bottom: 15px; 
+          }
+
           @include range-width(755px, 1090px) {
             font-size: 24px;
           }
@@ -931,9 +937,10 @@ header {
               display: inline-block;
               width: calc(100% - 185px - 30px);
               border-bottom: 1px dotted rgba(138, 138, 138, 1.00);
-              float: left;
+              float: right;
               text-align: left;
               padding-bottom: 10px;
+
 
               @include range-width(0, 680px) {
                 width: 100%;
@@ -969,6 +976,56 @@ header {
                       @include range-width(0, 450px) {
                         display: none;
                       }
+                    }
+                  }
+                }
+
+                .bus_boxs {
+                  display: inline-block;
+                  width: 100%;
+                  @include clearfix();
+                  
+                  
+                  .bus_name {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: rgba(168, 41, 46, 1.00);
+                    float: left;
+                    line-height: 50px;
+
+                    @include range-width(0, 540px) {
+                      width: 100%;
+                      font-size: 18px;
+                      line-height: 30px;
+                    }
+                  }
+
+                  .bus_number {
+                    display: inline-block;
+                    width: 50%;
+                    font-size: 20px;
+                    color: rgba(42, 42, 42, 1.00);
+                    float: left;
+                    line-height: 50px;
+
+                    @include range-width(0, 540px) {
+                      width: 100%;
+                      font-size: 18px;
+                      line-height: 30px;
+                    }
+                  }
+
+                  .bus_cent {
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 20px;
+                    color: rgba(42, 42, 42, 1.00);
+                    padding: 5px 0;
+
+                    @include range-width(0, 540px) {
+                      width: 100%;
+                      font-size: 16px
                     }
                   }
                 }
@@ -1094,6 +1151,14 @@ header {
                 }
               }
             }
+
+            .map {
+              display: list-item;
+              width: 100%;
+              max-width: 785px;
+              list-style: none;
+              margin: 10px 0;
+            }
           }
         }
       }
@@ -1196,7 +1261,20 @@ footer {
 
 
 
+.info {
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+  color: rgba(168, 41, 45, 1.00);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 50px 0;
 
+  @include range-width(0, 800px) {
+    padding: 30px 0;
+    font-size: 20px;
+  }
+}
 
 
 
