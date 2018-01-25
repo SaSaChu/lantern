@@ -704,6 +704,10 @@ header {
               text-decoration: underline;
             }
 
+            &.n_outlink {
+              text-decoration: none;
+            }
+
             @include range-width(0, 450px) {
               width: 100%;
               text-align: left;
@@ -786,6 +790,21 @@ header {
         display: inline-block;
         width: 100%;
         max-width: 1000px;
+        @include clearfix();
+
+        .trf_link {
+          display: inline-block;
+          float: right;
+          font-size: 20px;
+          color: rgba(83, 30, 120, 1.00);
+          font-weight: 600;
+          text-decoration: none;
+          padding-top: 10px;
+
+          &:hover, &:active {
+            text-decoration: underline;
+          }
+        }
 
         .lantern_title {
           display: inline-block;
