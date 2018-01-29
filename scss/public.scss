@@ -1010,6 +1010,19 @@ header {
                   padding: 0 10px;
                 }
 
+                .t_ps {
+                  display: inline-block;
+                  width: 100%;
+                  font-size: 18px;
+                  color: rgba(190, 23, 28, 1.00);
+                  text-align: left;
+                  padding: 15px 0 10px 0;
+
+                  @include range-width(0, 755px) {
+                    font-size: 16px;
+                  }
+                }
+
                 p {
                   display: inline-block;
                   padding: 5px 0;
