@@ -941,6 +941,21 @@ header {
               font-size: 16px;
               line-height: 25px;
             }
+
+            &.tr_o {
+              padding: 20px 0 0 0;
+            }
+
+            &.tr_list {
+              padding: 0 0 20px 30px;
+            } 
+
+            i {
+              display: inline-block;
+              font-style: normal;
+              color: rgba(190, 23, 28, 1.00);
+              font-weight: 600;
+            }
           }
 
           .ps {
@@ -1027,6 +1042,10 @@ header {
                   }
                 }
 
+                img {
+                  padding: 10px 0;
+                }
+
                 p {
                   display: inline-block;
                   padding: 5px 0;
@@ -1052,6 +1071,33 @@ header {
                       padding: 0 10px;
 
                       @include range-width(0, 450px) {
+                        display: none;
+                      }
+                    }
+                  }
+
+                  &.tr_p {
+                    padding-left: 95px;
+                  }
+
+                  &.park {
+                    width: 100%;
+                  }
+
+                  &.park_title {
+                    color: rgba(83, 30, 120, 1.00);
+                    font-weight: 600;
+
+                    &:first-child {
+                      &:after {
+                        display: none;
+                      }
+                    }
+                  }
+
+                  &.park_nobor {
+                    &:first-child {
+                      &:after {
                         display: none;
                       }
                     }
