@@ -360,6 +360,10 @@ header {
     img {
       width: 100%;
       max-width: 919px;
+
+      &.have_dog {
+        max-width: 1100px;
+      }
     }
 
     &:before {
