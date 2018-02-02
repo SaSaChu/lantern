@@ -1387,7 +1387,7 @@ header {
           @include clearfix();
           text-align: left;
 
-          @include range-width(0, 650px) {
+          @include range-width(0, 875px) {
             margin-top: 20px;
           }
 
@@ -1396,7 +1396,7 @@ header {
             float: left;
             font-size: 18px;
             font-weight: 600;
-            padding: 10px 20px;
+            padding: 10px 15px;
             height: 45px;
 
             @include range-width(0, 800px) {
@@ -1407,21 +1407,40 @@ header {
 
 
           .room_name {
-            width: 30%;
+            width: 40%;
             color: white;
             background-color: rgba(144, 97, 155, 1.00);
 
-            @include range-width(0, 650px) {
+            @include range-width(0, 875px) {
               width: 100%;
             }
+            
+            .da {
+              display: inline-block;
+              cursor: pointer;
+              float: right;
+              margin: 0 10px;
+              padding: 3px 10px;
+              @include border-radius(3px);
+              background-color: white;
+              color: rgba(82, 35, 118, 1.00);
+              text-decoration: none;
+              font-size: 14px;
+              font-weight: 600;
+
+              &:hover, &:active {
+                background-color: rgba(255, 255, 255, .9);
+              }
+            }
+
           }
 
           .room_add {
-            width: 50%;
+            width: 40%;
             color: rgba(42, 42, 42, .8);
             background-color: rgba(255, 255, 255, .5);
 
-            @include range-width(0, 650px) {
+            @include range-width(0, 875px) {
               width: 100%;
               background-color: rgba(255, 255, 255, .7);
             }
@@ -1432,7 +1451,7 @@ header {
             color: white;
             background-color: rgba(144, 97, 155, .5);
 
-            @include range-width(0, 650px) {
+            @include range-width(0, 875px) {
               width: 100%;
             }
           }
