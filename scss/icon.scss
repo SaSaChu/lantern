@@ -6,6 +6,9 @@
   @include font-smoothing(antialiased);
 }
 
+.icon-lan:before {
+  content: "\e902";
+}
 .icon-s_dog:before {
   content: "\e901";
 }
