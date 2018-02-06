@@ -706,14 +706,22 @@ header {
             font-weight: 600;
             padding: 0;
             margin: 0 0 0 30px;
-            line-height: 50px;
+            line-height: 30px;
+
 
             &:hover, &:active {
               text-decoration: underline;
             }
 
             &.n_outlink {
+              width: calc(100% - 165px);
               text-decoration: none;
+              text-align: left;
+              padding-top: 8px;
+
+              @include range-width(0, 450px) {
+                width: 100%;
+              }
             }
 
             @include range-width(0, 450px) {
